@@ -1,0 +1,26 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:taskmanagerdb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: ""
+
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    hibernate:
+      ddl-auto: update
+
+  security:
+    user:
+      name: admin
+      password: admin
+    oauth2:
+      resourceserver:
+        jwt:
+          jwt-set-uri: ""
+
+vaadin:
+  urlMapping: "/*"
